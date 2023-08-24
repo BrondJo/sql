@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-08-2023 a las 02:12:59
+-- Tiempo de generación: 24-08-2023 a las 03:38:22
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -69,6 +69,13 @@ CREATE TABLE `huesped` (
   `celular` varchar(30) NOT NULL,
   `activo` tinyint(4) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `huesped`
+--
+
+INSERT INTO `huesped` (`idHuesped`, `nombre`, `apellido`, `dni`, `domicilio`, `correo`, `celular`, `activo`) VALUES
+(1, 'Joel', 'Brondo', 36774181, 'Sargento Cabral 1450', 'joelbrondo@gmail.com', '3517186479', 1);
 
 -- --------------------------------------------------------
 
@@ -139,7 +146,7 @@ ALTER TABLE `habitacion`
 -- AUTO_INCREMENT de la tabla `huesped`
 --
 ALTER TABLE `huesped`
-  MODIFY `idHuesped` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `idHuesped` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `reserva`
